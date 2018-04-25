@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8"/>
+<title>无标题文档</title>
+</head>
+<body style="padding:0; margin:0;">
+<video id="demo" <source src="http://ad-res.advst.cp33.ott.cibntv.net/test/2018/03/20180320135332_098f6bcd.mp4" type="video/mp4" style="padding:0; margin:0;"> width="auto" height="auto">ni de liulanqi bu zhichi shipin</video>
+//<br />
+//<button type="button" onClick="clic_play_pause()">播放或暂停</button>
+<script>
+var myvideo=document.getElementById("demo");
+myvideo.addEventListener("error",error_listen);
+myvideo.addEventListener("play",play_listen);
+myvideo.addEventListener("loadeddata",loadeddata_listen);
+myvideo.addEventListener("ended",ended_listen);
+function clic_play_pause(){
+if(myvideo.paused)
+  myvideo.play();
+  else myvideo.pause();
+  }
+  function play(){
+
+  if(myvideo.paused){
+   myvideo.play();
+  }
+  }
+  
+  function load(){
+
+  
+  }
+  function error_listen(){
+
+  window.video.error_listen();
+  }
+  function play_listen(){
+
+  window.video.play_listen();
+  }
+  function loadeddata_listen(){
+ 
+  window.video.loadeddata_listen();
+  }
+  function ended_listen(){
+
+  window.video.ended_listen();
+  }
+  </script>
+  </body>
+  </html>
